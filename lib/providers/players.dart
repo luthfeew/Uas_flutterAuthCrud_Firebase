@@ -18,7 +18,7 @@ class Players with ChangeNotifier {
     DateTime datetimeNow = DateTime.now();
 
     Uri url = Uri.parse(
-        "https://meapps-25681-default-rtdb.asia-southeast1.firebasedatabase.app/players.json");
+        "https://uas-pmo-default-rtdb.asia-southeast1.firebasedatabase.app/players.json");
     return http
         .post(
       url,
@@ -52,7 +52,7 @@ class Players with ChangeNotifier {
   Future<void> editPlayer(
       String id, String name, String position, String image) {
     Uri url = Uri.parse(
-        "https://meapps-25681-default-rtdb.asia-southeast1.firebasedatabase.app/players/$id.json");
+        "https://uas-pmo-default-rtdb.asia-southeast1.firebasedatabase.app/players/$id.json");
     return http
         .put(
       url,
@@ -78,7 +78,7 @@ class Players with ChangeNotifier {
 
   Future<void> deletePlayer(String id) {
     Uri url = Uri.parse(
-        "https://meapps-25681-default-rtdb.asia-southeast1.firebasedatabase.app/players/$id.json");
+        "https://uas-pmo-default-rtdb.asia-southeast1.firebasedatabase.app/players/$id.json");
     return http.delete(url).then(
       (response) {
         _allPlayer.removeWhere((element) => element.id == id);
