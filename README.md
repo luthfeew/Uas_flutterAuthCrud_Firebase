@@ -1,16 +1,26 @@
 # meapps
 
-A new Flutter project.
+Firebase Auth & Realtime Database App.
 
-## Getting Started
+## Cara menjalankan
 
-This project is a starting point for a Flutter application.
+**Langkah 1:**
 
-A few resources to get you started if this is your first Flutter project:
+Download atau kloning repository ini:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+https://github.com/luthfeew/Uas_flutterAuthCrud_Firebase.git
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Langkan 2:**
+
+Jalankan perintah berikut di konsol/terminal: 
+
+```
+flutter pub get 
+```
+
+**Langkah 3:**
+
+* Konfigurasi Firebase: https://firebase.google.com/
+* Tutorial konfigurasi Firebase: https://blog.codemagic.io/firebase-authentication-google-sign-in-using-flutter/
